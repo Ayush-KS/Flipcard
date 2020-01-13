@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    color: white;
+    background-image: linear-gradient(to right, #B06AB3, #4568DC);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#title {
+    font-size: 3.5rem;
+}
+
+#heading {
+    font-size: 2rem;
+}
+
+#deck>div, #selected-cards {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: inherit;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+img {
+    width: 75.9px;
+    height: 110px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#selected-cards {
+    margin-top: 30px;
+    display: none;
+}
+
+#link {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#play-again {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    background-color: #D80300;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
