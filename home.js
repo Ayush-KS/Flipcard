@@ -78,7 +78,7 @@ var swap = function(arr, i, j) {
 
 let finalShow = function() {
 
-    $('#play-again').css('display', 'block');
+    $('.button').css('display', 'block');
 
     $('body').css('background-image', 'linear-gradient(to left, #B06AB3, #4568DC)')
     $('#heading').text("Now show this to me!");
@@ -136,7 +136,7 @@ let finalShow = function() {
         if(selectedRanks[i] > selectedRanks[maxCardIndex])
             maxCardIndex = i;
         else if(selectedRanks[i] == selectedRanks[maxCardIndex]) {
-            if(priority(selectedSuits[i]) < priority(selectedSuits[maxCardIndex]))
+            if(priority(selectedSuits[i]) > priority(selectedSuits[maxCardIndex]))
                 maxCardIndex = i;
         }
     }
@@ -219,4 +219,6 @@ let finalShow = function() {
        }
         finalCardPos--;
     }
+
+    $('img').css('cursor', 'default');
 }
