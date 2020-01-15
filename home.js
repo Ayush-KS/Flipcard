@@ -148,6 +148,10 @@ let finalShow = function() {
 
 //    console.log(maxCardIndex, selectedSuits[maxCardIndex], selectedRanks[maxCardIndex]);
 
+    // console.log(selectedAddresses);
+    // console.log(selectedRanks);
+    // console.log(selectedSuits);
+
     selectedSuits.splice(maxCardIndex, 1);
     selectedRanks.splice(maxCardIndex, 1);
     selectedSuits.splice(selectedSuits.indexOf(finalCardSuit), 1);
@@ -155,11 +159,14 @@ let finalShow = function() {
     var maxCardAddress = selectedAddresses[maxCardIndex];
 
     selectedAddresses.splice(maxCardIndex, 1);
+    // console.log(selectedAddresses);
+    // console.log(selectedRanks);
+    // console.log(selectedSuits);
     selectedAddresses.splice(selectedAddresses.indexOf(finalCard), 1);
-
-    console.log(selectedAddresses);
-    console.log(selectedRanks);
-    console.log(selectedSuits);
+    // console.log(selectedAddresses);
+    // console.log(selectedRanks);
+    // console.log(selectedSuits);
+    
 
     for(let k = 0; k < 2; k++) {
         for(let j = 0; j < 3 - k; j++) {
@@ -194,6 +201,8 @@ let finalShow = function() {
         val = 3;
         t3 = 1;
     }
+
+    console.log(finalCardRank, val, t1);
     
 
     for(let i = 0; i < 5; i++) {
