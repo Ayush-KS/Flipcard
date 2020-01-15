@@ -208,7 +208,7 @@ let finalShow = function() {
         t3 = 1;
     }
 
-    console.log(finalCardRank, val, t1);
+//    console.log(finalCardRank, val, t1);
     
 
     for(let i = 0; i < 5; i++) {
