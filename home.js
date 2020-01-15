@@ -166,6 +166,7 @@ let finalShow = function() {
     selectedRanks.splice(finalCardIndex, 1);
     selectedAddresses.splice(finalCardIndex, 1);
 
+    console.log("helloooo");
     
     // console.log(selectedAddresses);
     // console.log(selectedRanks);
