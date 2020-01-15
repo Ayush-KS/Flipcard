@@ -151,18 +151,22 @@ let finalShow = function() {
     // console.log(selectedAddresses);
     // console.log(selectedRanks);
     // console.log(selectedSuits);
+    var maxCardAddress = selectedAddresses[maxCardIndex];
 
     selectedSuits.splice(maxCardIndex, 1);
     selectedRanks.splice(maxCardIndex, 1);
-    selectedSuits.splice(selectedSuits.indexOf(finalCardSuit), 1);
-    selectedRanks.splice(selectedRanks.indexOf(finalCardRank), 1);
-    var maxCardAddress = selectedAddresses[maxCardIndex];
-
     selectedAddresses.splice(maxCardIndex, 1);
+
     // console.log(selectedAddresses);
     // console.log(selectedRanks);
     // console.log(selectedSuits);
-    selectedAddresses.splice(selectedAddresses.indexOf(finalCard), 1);
+
+    var finalCardIndex = selectedAddresses.indexOf(finalCard);
+    selectedSuits.splice(finalCardIndex, 1);
+    selectedRanks.splice(finalCardIndex, 1);
+    selectedAddresses.splice(finalCardIndex, 1);
+
+    
     // console.log(selectedAddresses);
     // console.log(selectedRanks);
     // console.log(selectedSuits);
@@ -171,6 +175,7 @@ let finalShow = function() {
     for(let k = 0; k < 2; k++) {
         for(let j = 0; j < 3 - k; j++) {
             if(selectedRanks[j] > selectedRanks[j + 1]) {
+//                console.log(selectedRanks[j], selectedSuits[j], selectedAddresses[j]);
                 swap(selectedRanks, j, j + 1);
                 swap(selectedSuits, j, j + 1);
                 swap(selectedAddresses, j, j + 1);
