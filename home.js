@@ -148,29 +148,29 @@ let finalShow = function() {
 
 //    console.log(maxCardIndex, selectedSuits[maxCardIndex], selectedRanks[maxCardIndex]);
 
-    console.log(selectedAddresses);
-    console.log(selectedRanks);
-    console.log(selectedSuits);
+    // console.log(selectedAddresses);
+    // console.log(selectedRanks);
+    // console.log(selectedSuits);
     var maxCardAddress = selectedAddresses[maxCardIndex];
 
     selectedSuits.splice(maxCardIndex, 1);
     selectedRanks.splice(maxCardIndex, 1);
     selectedAddresses.splice(maxCardIndex, 1);
 
-    console.log(selectedAddresses);
-    console.log(selectedRanks);
-    console.log(selectedSuits);
+    // console.log(selectedAddresses);
+    // console.log(selectedRanks);
+    // console.log(selectedSuits);
 
     var finalCardIndex = selectedAddresses.indexOf(finalCard);
     selectedSuits.splice(finalCardIndex, 1);
     selectedRanks.splice(finalCardIndex, 1);
     selectedAddresses.splice(finalCardIndex, 1);
 
-    console.log("This is Correct!");
+    // console.log("This is Correct!");
     
-    console.log(selectedAddresses);
-    console.log(selectedRanks);
-    console.log(selectedSuits);
+    // console.log(selectedAddresses);
+    // console.log(selectedRanks);
+    // console.log(selectedSuits);
     
 
     for(let k = 0; k < 2; k++) {
@@ -190,9 +190,11 @@ let finalShow = function() {
         }
     }
 
-    console.log(selectedAddresses);
-    console.log(selectedRanks);
-    console.log(selectedSuits);
+    // console.log(selectedAddresses);
+    // console.log(selectedRanks);
+    // console.log(selectedSuits);
+
+    console.log("Hip Hip Heroku!");
 
     var val, t1, t2, t3;
     if(finalCardRank < 6) {
